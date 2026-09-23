@@ -13,8 +13,7 @@ jobs: # Any name can be provided
         uses: actions/checkout@v1 # Script actions
 
       - name: Configure AWS Credentials
-         uses: CI/CD-demo/s3-sync-action@master        
-        #uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
